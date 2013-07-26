@@ -1,5 +1,5 @@
---[[Mod adding a plasma screen television by qwrwed
-Stand will be included in the future
+--Mod adding a plasma screen television by qwrwed
+
 
 minetest.register_node("plasmascreen:stand", {
 	description = "Plasma Screen TV Stand",
@@ -8,22 +8,22 @@ minetest.register_node("plasmascreen:stand", {
 	paramtype2 = "facedir",
 	drawtype = "nodebox",
 	node_box = {
-				type = "fixed",
-				fixed = {
-							{-0.4000, -0.5000, -0.4000, 0.4000, -0.4375, 0.4000},
-							{-0.1500, -0.4375, -0.1500, 0.1500, -0.2000, 0.1500},
-							--{-0.5000, -0.3125, -0.3125, 0.5000, 0.5000, -0.3750},
-							--{-0.5000, -0.3125, -0.3750, 0.5000, -0.1250, -0.4735},
-						}
+		type = "fixed",
+		fixed = {
+			{0.5000,-0.5000,0.0625,-0.5000,-0.4375,-0.5000}, --NodeBox 1
+			{-0.1875,-0.5000,-0.3750,0.1875,0.1250,-0.1250}, --NodeBox 2
+			{-0.5000,-0.2500,-0.5000,0.5000,0.5000,-0.3750}, --NodeBox 3
+			{-0.3750,-0.1875,-0.3750,0.3750,0.3125,-0.2500}, --NodeBox 4
+		}
 	},
 		selection_box = {
 				type = "fixed",
 				fixed = {
-							{-0.5000, -0.5000, -0.5000, 0.5000, 0.5000, 0.5000},
+							{-0.5000, -0.5000, -0.5000, 0.5000, 0.5000, 0.0000},
 						}
 	},
 	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2},
-})]]
+})
 
 minetest.register_node("plasmascreen:screen1", {
 	description = "Plasma Screen 1",
@@ -97,9 +97,9 @@ minetest.register_node("plasmascreen:screen4", {
 	node_box = {
 				type = "fixed",
 				fixed = {
-							{-0.5000, -0.5000, 0.4375, 0.5000, 0.5000, 0.5000},
-							{-0.5000, -0.5000, 0.3750, 0.5000, -0.3125, 0.4375},
-							{-0.5000, -0.5000, 0.5000, -0.3125, 0.5000, 0.3750},
+							{-0.5000, -0.3125, 0.4375, 0.5000, 0.5000, 0.5000},
+							{-0.5000, -0.3125, 0.3750, 0.5000, -0.1250, 0.4375},
+							{-0.5000, -0.3125, 0.5000, -0.3125, 0.5000, 0.3750},
 						}
 	},
 		selection_box = {
@@ -120,13 +120,13 @@ minetest.register_node("plasmascreen:screen5", {
 	node_box = {
 				type = "fixed",
 				fixed = {
-							{-0.5000, -0.5000, 0.4375, 0.5000, 0.5000, 0.5000},
-							{-0.5000, -0.5000, 0.3750, 0.5000, -0.3125, 0.4375},
+							{-0.5000, -0.3125, 0.4375, 0.5000, 0.5000, 0.5000},
+							{-0.5000, -0.3125, 0.3750, 0.5000, -0.1250, 0.4375},
 						}
 	},
 		selection_box = {
 				type = "fixed",
-				fixed = {-1.5050, -0.5050, 0.3700, 1.5050, 1.5050, 0.5050}
+				fixed = {-1.5050, -0.3125, 0.3700, 1.5050, 1.5050, 0.5050}
 	},
 	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2},
 	    
@@ -339,9 +339,9 @@ minetest.register_node("plasmascreen:screen6", {
 	node_box = {
 				type = "fixed",
 				fixed = {
-							{-0.5000, -0.5000, 0.4375, 0.5000, 0.5000, 0.5000},
-							{-0.5000, -0.5000, 0.3750, 0.5000, -0.3125, 0.4375},
-							{0.3125, -0.5000, 0.5000, 0.5000, 0.5000, 0.3750},
+							{-0.5000, -0.3125, 0.4375, 0.5000, 0.5000, 0.5000},
+							{-0.5000, -0.3125, 0.3750, 0.5000, -0.1250, 0.4375},
+							{0.3125, -0.3125, 0.5000, 0.5000, 0.5000, 0.3750},
 						}
 	},
 		selection_box = {
