@@ -27,7 +27,22 @@ minetest.register_node("plasmascreen:stand", {
 
 minetest.register_node("plasmascreen:screen1", {
 	description = "Plasma Screen 1",
-	tiles = {"plasmascreen_back.png", "plasmascreen_screen.png", "plasmascreen_screen.png", "plasmascreen_back.png", "plasmascreen_back.png", "plasmascreen_screen1.png"},
+	tiles = {
+		"plasmascreen_back.png",
+		"plasmascreen_screen.png",
+		"plasmascreen_screen.png",
+		"plasmascreen_back.png",
+		"plasmascreen_back.png",
+		{ name="plasmascreen_screen1.png",
+			animation={
+				type="vertical_frames",
+				aspect_w=16,
+				aspect_h=16,
+				length=44
+			}
+		}
+
+	},
 	paramtype = "light",
 	paramtype2 = "facedir",
 	drop = "",
@@ -48,7 +63,22 @@ minetest.register_node("plasmascreen:screen1", {
 })
 minetest.register_node("plasmascreen:screen2", {
 	description = "Plasma Screen 2",
-	tiles = {"plasmascreen_back.png", "plasmascreen_screen.png", "plasmascreen_screen.png", "plasmascreen_screen.png", "plasmascreen_back.png", "plasmascreen_screen2.png"},
+	tiles = {
+		"plasmascreen_back.png",
+		"plasmascreen_screen.png",
+		"plasmascreen_screen.png",
+		"plasmascreen_back.png",
+		"plasmascreen_back.png",
+		{ name="plasmascreen_screen2.png",
+			animation={
+				type="vertical_frames",
+				aspect_w=16,
+				aspect_h=16,
+				length=44
+			}
+		}
+
+	},
 	paramtype = "light",
 	paramtype2 = "facedir",
 	drop = "",
@@ -68,7 +98,22 @@ minetest.register_node("plasmascreen:screen2", {
 })
 minetest.register_node("plasmascreen:screen3", {
 	description = "Plasma Screen 3",
-	tiles = {"plasmascreen_back.png", "plasmascreen_screen.png", "plasmascreen_back.png", "plasmascreen_screen.png", "plasmascreen_back.png", "plasmascreen_screen3.png"},
+	tiles = {
+		"plasmascreen_back.png",
+		"plasmascreen_screen.png",
+		"plasmascreen_screen.png",
+		"plasmascreen_back.png",
+		"plasmascreen_back.png",
+		{ name="plasmascreen_screen3.png",
+			animation={
+				type="vertical_frames",
+				aspect_w=16,
+				aspect_h=16,
+				length=44
+			}
+		}
+
+	},
 	paramtype = "light",
 	paramtype2 = "facedir",
 	drop = "",
@@ -89,7 +134,22 @@ minetest.register_node("plasmascreen:screen3", {
 })
 minetest.register_node("plasmascreen:screen4", {
 	description = "Plasma Screen 4",
-	tiles = {"plasmascreen_screen.png", "plasmascreen_back.png", "plasmascreen_screen.png", "plasmascreen_back.png", "plasmascreen_back.png", "plasmascreen_screen4.png"},
+	tiles = {
+		"plasmascreen_back.png",
+		"plasmascreen_screen.png",
+		"plasmascreen_screen.png",
+		"plasmascreen_back.png",
+		"plasmascreen_back.png",
+		{ name="plasmascreen_screen4.png",
+			animation={
+				type="vertical_frames",
+				aspect_w=16,
+				aspect_h=16,
+				length=44
+			}
+		}
+
+	},
 	paramtype = "light",
 	paramtype2 = "facedir",
 	drop = "",
@@ -111,7 +171,22 @@ minetest.register_node("plasmascreen:screen4", {
 
 minetest.register_node("plasmascreen:screen5", {
 	description = "Plasma TV",
-	tiles = {"plasmascreen_screen.png", "plasmascreen_back.png", "plasmascreen_screen.png", "plasmascreen_screen.png", "plasmascreen_back.png", "plasmascreen_screen5.png"},
+	tiles = {
+		"plasmascreen_back.png",
+		"plasmascreen_screen.png",
+		"plasmascreen_screen.png",
+		"plasmascreen_back.png",
+		"plasmascreen_back.png",
+		{ name="plasmascreen_screen5.png",
+			animation={
+				type="vertical_frames",
+				aspect_w=16,
+				aspect_h=16,
+				length=44
+			}
+		}
+
+	},
 	inventory_image = "plasmascreen_tv_inv.png",
 	wield_image = "plasmascreen_tv_inv.png",
 	paramtype = "light",
@@ -331,7 +406,22 @@ after_place_node = function(pos,placer,itemstack)
 
 minetest.register_node("plasmascreen:screen6", {
 	description = "Plasma Screen 6",
-	tiles = {"plasmascreen_screen.png", "plasmascreen_back.png", "plasmascreen_back.png", "plasmascreen_screen.png", "plasmascreen_back.png", "plasmascreen_screen6.png"},
+	tiles = {
+		"plasmascreen_back.png",
+		"plasmascreen_screen.png",
+		"plasmascreen_screen.png",
+		"plasmascreen_back.png",
+		"plasmascreen_back.png",
+		{ name="plasmascreen_screen6.png",
+			animation={
+				type="vertical_frames",
+				aspect_w=16,
+				aspect_h=16,
+				length=44
+			}
+		}
+
+	},
 	paramtype = "light",
 	paramtype2 = "facedir",
 	drop = "",
