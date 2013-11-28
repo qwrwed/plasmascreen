@@ -455,3 +455,12 @@ minetest.register_craft({
 	output = "plasmascreen:screen5",
 	recipe = {'homedecor:television', 'homedecor:television'},
 })
+
+minetest.register_craft({
+	output = "plasmascreen:stand",
+	recipe = {
+		{'', '', ''},
+		{'', 'default:steel_ingot', ''},
+		{'group:stick', 'default:coal_lump', 'group:stick'},
+	}
+})
